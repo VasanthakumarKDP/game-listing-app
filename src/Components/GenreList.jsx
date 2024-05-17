@@ -30,7 +30,7 @@ function GenreList() {
               src={item.image_background}
               className="w-[40px] h-[40px] object-cover rounded-lg group-hover:scale-105 transition-all ease-out duration-300"
             />
-            <h2>babu</h2>
+
             <h3 className="dark:text-white text-[15px] font-normal group-hover:font-bold scale-105 transition-all ease-out duration-300">
               {item.name}
             </h3>
