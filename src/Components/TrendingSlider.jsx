@@ -3,8 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
-import PropTypes from "prop-types";
-import "tailwindcss/tailwind.css";
 
 const slideDimensions = {
   width: "250px",

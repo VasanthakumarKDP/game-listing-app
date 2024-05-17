@@ -4,6 +4,7 @@ import GlobalApi from "../Services/GlobalApi";
 import Banner from "../Components/Banner";
 import TrendingGames from "../Components/TrendingGames";
 import TrendingSlider from "../Components/TrendingSlider";
+import PopularGames from "../Components/PopularGames";
 
 function Home() {
   const [allGameList, setAllGameList] = useState([]);
@@ -12,7 +13,6 @@ function Home() {
   });
   const getAllGamesList = () => {
     GlobalApi.getAllGames.then((resp) => {
-      console.log(resp.data.results);
       setAllGameList(resp.data.results);
     });
   };
@@ -24,9 +24,10 @@ function Home() {
       <div className="col-span-4 md:col-span-3">
         {allGameList?.length > 0 ? (
           <div>
-            <Banner gameBanner={allGameList[0]} />
+            <Banner gameBanner={allGameList[15]} />
             {/* <TrendingGames gamelist={allGameList} /> */}
             <TrendingSlider gamelist={allGameList} />
+            <PopularGames gamelist={allGameList} />
           </div>
         ) : null}
       </div>
