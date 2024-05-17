@@ -14,7 +14,7 @@ function TrendingGames({ gamelist }) {
               src={item.background_image}
               className="h-[270px] rounded-t-lg object-cover"
             />
-            <h2 className="dark:text-white text-[20px] font-bold px-2">
+            <h2 className="dark:text-white text-[18px] font-normal px-2">
               {item.name}
             </h2>
           </div>
