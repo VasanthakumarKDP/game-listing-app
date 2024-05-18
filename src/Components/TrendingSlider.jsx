@@ -12,7 +12,7 @@ const slideDimensions = {
 const TrendingSlider = ({ gamelist }) => {
   return (
     <>
-      <div className="mt-1 hidden md:block">
+      <div className="mt-1 md:block ">
         <h2 className="font-bold text-[30px] dark:text-white pt-8">
           Trending Games
         </h2>
