@@ -24,6 +24,10 @@ const TrendingSlider = ({ gamelist }) => {
             modules={[Pagination]}
             className="mySwiper text-white py-10"
             breakpoints={{
+              360: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
               640: {
                 slidesPerView: 1,
                 spaceBetween: 10,
