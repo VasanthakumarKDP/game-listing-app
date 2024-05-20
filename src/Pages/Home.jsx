@@ -17,7 +17,7 @@ function Home() {
     });
   };
   return (
-    <div className="grid grid-cols-4 px-">
+    <div className="grid grid-cols-4 ">
       <div className=" h-full hidden md:block">
         <GenreList />
       </div>
